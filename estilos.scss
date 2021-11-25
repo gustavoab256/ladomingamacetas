@@ -1,0 +1,210 @@
+$color1: #964696;
+$color2: #FBD9CE;
+$color3: #552955;
+$color4: tomato;
+
+$ancho:700px;
+$alto:200px;
+
+$var1:100%;
+$var2: 50%;
+
+$xs:10px;
+$small:20px;
+$md:40px;
+$large:60px;
+$xl:80px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(150, 70, 150);
+    background: linear-gradient(175deg, rgba(150, 70, 150, 1) 0%, rgba(127, 0, 246, 1) 50%, rgba(150, 70, 150, 1) 100%);
+    font-family: 'Klee One', cursive !important;
+    letter-spacing: 1px;
+}
+
+header {
+    width: $var1;
+    margin-top: ($md)-($small);
+    height: ($alto)-10;
+    background: rgb(251, 217, 206);
+    background: linear-gradient(54deg, rgba(251, 217, 206, 1) 27%, rgba(61, 233, 219, 1) 67%, rgba(36, 225, 234, 1) 86%, rgba(0, 212, 255, 1) 100%);
+    border: 5px $color3 solid;
+    border-style: inset;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: ($var2)+30;
+
+    a {
+        color: #F59751;
+        text-decoration: none;
+        font-size: ($small)-5px;
+        display: flex;
+    }
+
+    a:hover {
+        transform: translateX(0.5em);
+        color: $color4;
+        transition: .4s;
+    }
+
+    .menuItems li {
+        position: relative;
+        display: inline-block;
+        list-style: none;
+        margin-left: ($var2)-40%;
+        padding-bottom: $small;
+    }
+
+    .menuItems ul {
+        position: absolute;
+        display: none;
+        list-style: none;
+    }
+
+    .menuItems ul li {
+        display: inline-block;
+        background-color: $color2;
+        margin-left: 0;
+        list-style: none;
+        padding: ($md)-($xs);
+        color: $color4;
+        font-size: $xs+5px;
+        transition: .4s;
+    }
+
+    #redes {
+        font-size: $large;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+.logo {
+    width: ($var1)-80%;
+    margin: auto;
+}
+
+.logo img {
+    width: ($var1)-10%;
+    height: auto;
+}
+
+/* -- bem --*/
+.section__h3--color {
+    color: $color4;
+}
+
+.article__p--color {
+    font-weight: bolder;
+    color: $color3;
+}
+
+.section--width {
+    width: $var2*2;
+}
+
+.div--margin {
+    margin-left: ($large)-($xs);
+    margin-right: ($large)-($xs);
+    margin-bottom: ($large)-($xs);
+}
+
+.box__uno {
+    margin: ($md)-($xs);
+}
+
+.box__section {
+    background-color: #FFAFCC;
+    height: auto;
+    width: $var1;
+    border: 10px $color3 solid;
+    border-style: inset;
+    padding: ($xl)-20px;
+}
+
+
+/* -- bem --*/
+
+
+.carousel-indicators li {
+    height: ($large)-($md);
+    width: ($large)-($md);
+    border-radius: $var2;
+}
+
+
+h1 {
+    text-align: left;
+    text-transform: uppercase;
+    animation-iteration-count: infinite;
+}
+
+#caja1 {
+    color: #F59751
+}
+
+.containerTabla {
+    width: $var1;
+    height: auto;
+    background-color: #F59751;
+    border: 5px $color3 solid;
+    text-transform: capitalize;
+}
+
+footer {
+    height: ($alto)-10px;
+    margin-bottom: $small;
+    background-color: #3de9db;
+    background: rgb(251, 217, 206);
+    background: linear-gradient(54deg, rgba(251, 217, 206, 1) 27%, rgba(61, 233, 219, 1) 67%, rgba(36, 225, 234, 1) 86%, rgba(0, 212, 255, 1) 100%);
+    border: 5px solid $color3;
+    border-style: inset;
+    padding: $small;
+    margin-top: ($md)+10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+@media only screen and (max-width: 350px) {
+    body {
+        background-color: yellowgreen;
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: green !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background-color: #3cf0cf !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: #964696 !important;
+    }
+}

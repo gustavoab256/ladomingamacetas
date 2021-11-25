@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: #FFAFCC;
+}
+
+header {
+    margin-top: 20px;
+    background-color: #FBD9CE;
+    background: rgb(251, 217, 206);
+    background: radial-gradient(circle, rgba(251, 217, 206, 1) 42%, rgba(36, 225, 234, 1) 70%, rgba(0, 212, 255, 1) 93%);
+    border: 3px #552955 solid;
+    margin-bottom: 50px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.div1 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #FBD9CE;
+    width: 300px;
+    height: auto;
+    align-items: center;
+    border: #F59751 solid 3px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.colorTitulo {
+    color: #F59751;
+}
+
+.colorDos {
+    color: crimson;
+}
+
+p {
+    color: #552955;
+}
+
+footer {
+    margin-bottom: 20px;
+    background-color: #3de9db;
+    background: rgb(251, 217, 206);
+    background: linear-gradient(54deg, rgba(251, 217, 206, 1) 27%, rgba(61, 233, 219, 1) 67%, rgba(36, 225, 234, 1) 86%, rgba(0, 212, 255, 1) 100%);
+    border: 5px solid #552955;
+    border-style: inset;
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagen {
+    width: 150px;
+    height: 130px;
+}
+
+#redes {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+}
+
+a:hover {
+    transform: translateX(0.5em);
+    color: red;
+    transition: .4s;
+}
+
+@media (max-width: 1200px) {
+    .contenedor {
+        background-color: yellow;
+    }
+
+    footer,
+    header {
+        background: #FBD9CE;
+    }
+}
+
+@media (max-width: 768px) {
+
+    footer,
+    header {
+        background: #FBD9CE;
+    }
+
+    .contenedor {
+        background-color: red;
+    }
+}
+
+@media (max-width: 576px) {
+    .contenedor {
+        background-color: #552955;
+    }
+}
