@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="modelos.css">
     <style>
-                * {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -41,6 +41,12 @@
             justify-content: center;
         }
 
+        #img_size:hover {
+            transform:scale(1.7,1.7);
+            color: red;
+            transition: .7s;
+        }
+
         h1 {
             display: flex;
             justify-content: center;
@@ -49,12 +55,12 @@
         .div1 {
             font-family: 'Courier New', Courier, monospace;
             background-color: #FBD9CE;
-            width: 300px;
+            width: 350px;
             height: auto;
-            align-items: center;
             border: #F59751 solid 3px;
-            margin: 0 auto;
+            margin: auto;
             padding: 2em;
+
         }
 
         .colorTitulo {
@@ -85,7 +91,7 @@
 
         .imagen {
             width: 150px;
-            height: 130px;
+            height: auto;
         }
 
         #redes {
@@ -145,36 +151,45 @@
 <body>
     <div class="contenedor ">
         <header>
-            <center><a href="index.html"><img src="Logoladominga.png.png" width="220" height="150"></a></center>
+            <center><a href="index.html"><img src="img/Logoladominga.png-removebg-preview.png" width="220"
+                        height="150"></a></center>
         </header>
 
         <!-- Contenido de Texto -->
         <h1 class="colorTitulo">Modelos disponibles</h1>
         <br>
 
-    <div class="d-flex flex-row">
-        <br>
-        <div class="div1" >
+        <div class="row ">
+            <br>
+            <div class="div1 justify-content-center row col-xs-12">
 
-            <h2 class="colorDos"><strong>Modelos grandes</strong> </h2> <br>
-            <h3 class="colorDos">Modelos numero 14</h3>
-            <img class="imagen" src="IMG_20210510_132646_273.jpg" alt="">
-            <h3 class="colorDos">Modelos numero 16</h3>
-            <img class="imagen" src="grid66666-min.jpg" alt="">
+                <h3 class="colorDos"><strong>Modelos grandes</strong> </h3>
+                <h5 class="colorDos">Modelos numero 14</h5>
+                <img class="imagen img-thumbnail bg-warning" id="img_size" src="img/IMG_20210510_132646_273.jpg" alt="">
+                <h5 class="colorDos">Modelos numero 16</h5>
+                <img class="imagen img-thumbnail bg-warning" id="img_size" src="img/grid66666-min.jpg" alt="">
 
+            </div>
+            <br>
+            <div class="div1 justify-content-center row col-xs-12">
+                <h3 class="colorDos"><strong>Modelos pequeños</strong> </h3>
+                <h5 class="colorDos">Modelos numero 8</h5>
+                <img class="imagen img-thumbnail bg-warning" id="img_size" src="img/grid222-min.jpg" alt="">
+                <h5 class="colorDos">Modelos numero 10</h5>
+                <img class="imagen img-thumbnail bg-warning" id="img_size" src="img/grid8-min.jpg" alt="">
+            </div>
+
+            <div class="div1 justify-content-center row col-xs-12">
+                <h3 class="colorDos"><strong>Cuencos para que vos decores!</strong> </h3>
+                <h5 class="colorDos">Modelos pequeños</h5>
+                <img class="imagen img-thumbnail bg-warning" id="img_size" src="img/cuencochico.jpg" alt="">
+                <h5 class="colorDos">Modelos grandes</h5>
+                <img class="imagen img-thumbnail bg-warning" id="img_size" src="img/cuencogrande.jpg" alt="">
+            </div>
         </div>
-        <br>
-        <div class="div1">
-            <h2 class="colorDos"><strong>Modelos pequeños</strong> </h2> <br>
-            <h3 class="colorDos">Modelos numero 8</h3>
-            <img class="imagen" src="grid222-min.jpg" alt="">
-            <h3 class="colorDos">Modelos numero 10</h3>
-            <img class="imagen" src="grid8-min.jpg" alt="">
-        </div>
-    </div>
         <footer>
             <div class="logoFooter">
-                <a href="index.html"><img src="Logoladominga.png.png" width="220" height="150"></a>
+                <a href="index.html"><img src="img/Logoladominga.png-removebg-preview.png" width="220" height="150"></a>
             </div>
             <nav>
                 <ul id="redes">

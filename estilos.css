@@ -124,7 +124,8 @@ nav #redes {
 h1 {
   text-align: left;
   text-transform: uppercase;
-  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 #caja1 {
@@ -174,6 +175,4 @@ footer {
   body {
     background-color: #964696 !important;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

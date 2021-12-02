@@ -24,8 +24,6 @@ h4 {
     display: grid;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-
-
 }
 
 .item {
@@ -45,7 +43,7 @@ h4 {
 
 .item1 {
     background-color: coral;
-    background-image: url(20201012_175412-min.jpg);
+    background-image: url(img/20201012_175412-min.jpg);
     background-size: cover;
     background-position: cover;
 }
@@ -53,49 +51,49 @@ h4 {
 .item2 {
     grid-area: "item2";
     background-color: cadetblue;
-    background-image: url(grid222-min.jpg);
+    background-image: url(img/grid222-min.jpg);
     background-size: cover;
 }
 
 .item3 {
     grid-area: "item3";
     background-color: fuchsia;
-    background-image: url(Grid888.jpg);
+    background-image: url(img/Grid888.jpg);
     background-size: cover;
 }
 
 .item4 {
     grid-area: "item4";
     background-color: forestgreen;
-    background-image: url(IMG_20210510_132646_273.jpg);
+    background-image: url(img/IMG_20210510_132646_273.jpg);
     background-size: cover;
 }
 
 .item5 {
     grid-area: "item5";
     background-color: firebrick;
-    background-image: url(grid66666-min.jpg);
+    background-image: url(img/grid66666-min.jpg);
     background-size: cover;
 }
 
 .item6 {
     grid-area: "item6";
     background-color: dodgerblue;
-    background-image: url(20210328_145856-min.jpg);
+    background-image: url(img/20210328_145856-min.jpg);
     background-size: cover;
 }
 
 .item7 {
     grid-area: "item7";
     background-color: deeppink;
-    background-image: url(Grid5.jpg);
+    background-image: url(img/Grid5.jpg);
     background-size: cover;
 }
 
 .item8 {
     grid-area: "item8";
     background-color: darkviolet;
-    background-image: url(grid8-min.jpg);
+    background-image: url(img/grid8-min.jpg);
     background-size: contain;
 }
 
