@@ -12,7 +12,10 @@ body {
 }
 
 header {
+  width: auto;
+  height: 160px;
   margin-top: 20px;
+  grid-area: header;
   background-color: #FBD9CE;
   background: #fbd9ce;
   background: radial-gradient(circle, #fbd9ce 42%, #24e1ea 70%, #00d4ff 93%);
@@ -20,41 +23,12 @@ header {
   margin-bottom: 50px;
 }
 
-.contenedor {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#img_size:hover {
-  transform: scale(1.7, 1.7);
-  color: red;
-  transition: 0.7s;
-}
-
 h1 {
-  display: flex;
-  justify-content: center;
-}
-
-div .div1 {
-  font-family: "Courier New", Courier, monospace;
-  background-color: #FBD9CE;
-  width: 300px;
-  height: auto;
-  align-items: center;
-  border: #F59751 solid 3px;
-  margin: 0 auto;
-  padding: 2em;
-}
-div p {
-  color: #552955;
-}
-div .colorTitulo {
   color: #F59751;
 }
-div .colorDos {
-  color: crimson;
+
+.consulta {
+  height: 200px;
 }
 
 footer {
@@ -66,41 +40,23 @@ footer {
   border-style: inset;
   padding: 20px;
   margin-top: 50px;
+  grid-area: footer;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-li {
+footer li {
   list-style: none;
 }
-
-a {
+footer a {
   text-decoration: none;
   font-size: 20px;
   display: flex;
 }
-
-a:hover {
+footer a:hover {
   transform: translateX(0.5em);
   color: red;
   transition: 0.4s;
 }
 
-#redes {
-  margin-right: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.imagen {
-  width: 150px;
-  height: 130px;
-}
-
-.logo {
-  align-items: center;
-}
-
-/*# sourceMappingURL=modelos.css.map */
+/*# sourceMappingURL=contacto.css.map */

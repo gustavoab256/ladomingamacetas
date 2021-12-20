@@ -1,0 +1,16 @@
+
+footer {
+    height: ($alto)+40px;
+    margin-bottom: $small;
+    background-color: #3de9db;
+    background: rgb(251, 217, 206);
+    background: linear-gradient(54deg, rgba(251, 217, 206, 1) 27%, rgba(61, 233, 219, 1) 67%, rgba(36, 225, 234, 1) 86%, rgba(0, 212, 255, 1) 100%);
+    border: 5px solid $color3;
+    border-style: inset;
+    padding: $small;
+    margin-top: ($md)+10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}

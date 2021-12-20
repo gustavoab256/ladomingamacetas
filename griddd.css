@@ -79,7 +79,7 @@ h4 {
 .item6 {
     grid-area: "item6";
     background-color: dodgerblue;
-    background-image: url(img/20210328_145856-min.jpg);
+    background-image: url(img/IMG_20201101_182910_584.jpg);
     background-size: cover;
 }
 
@@ -101,13 +101,13 @@ h4 {
 
 @media only screen and (min-width: 360px) {
     .fondo {
-        background-color: #000000;
+        background-color:#552955;
     }
 }
 
 @media only screen and (min-width: 480px) {
     .fondo {
-        background-color: #6cf03c;
+        background-color:#0a2a79;
         grid-template-columns: 1fr 1fr;
 
     }

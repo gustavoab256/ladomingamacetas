@@ -1,0 +1,13 @@
+header {
+    width: $var1;
+    margin-top: ($md)-($small);
+    height: ($alto)-10;
+    background: rgb(251, 217, 206);
+    background: linear-gradient(54deg, rgba(251, 217, 206, 1) 27%, rgba(61, 233, 219, 1) 67%, rgba(36, 225, 234, 1) 86%, rgba(0, 212, 255, 1) 100%);
+    border: 5px $color3 solid;
+    border-style: inset;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

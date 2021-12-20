@@ -4,17 +4,10 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #964696;
-  background: linear-gradient(175deg, #964696 0%, #7f00f6 50%, #964696 100%);
-  font-family: "Klee One", cursive !important;
-  letter-spacing: 1px;
-}
-
-header {
+nav {
   width: 100%;
   margin-top: 20px;
-  height: 190px;
+  height: auto;
   background: #fbd9ce;
   background: linear-gradient(54deg, #fbd9ce 27%, #3de9db 67%, #24e1ea 86%, #00d4ff 100%);
   border: 5px #552955 solid;
@@ -24,14 +17,10 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
-nav {
-  width: 80%;
-}
 nav a {
-  color: #F59751;
+  color: #F59751 !important;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
   display: flex;
 }
 nav a:hover {
@@ -81,6 +70,12 @@ nav #redes {
   height: auto;
 }
 
+h1 {
+  text-align: left;
+  text-transform: uppercase;
+  animation-iteration-count: infinite;
+}
+
 /* -- bem --*/
 .section__h3--color {
   color: tomato;
@@ -121,13 +116,6 @@ nav #redes {
   border-radius: 50%;
 }
 
-h1 {
-  text-align: left;
-  text-transform: uppercase;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
 #caja1 {
   color: #F59751;
 }
@@ -140,8 +128,45 @@ h1 {
   text-transform: capitalize;
 }
 
+@media only screen and (max-width: 350px) {
+  .logo {
+    width: 70%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 50%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .logo {
+    width: 40%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .logo {
+    width: 30%;
+    height: auto;
+  }
+}
+body {
+  background: #964696;
+  background: linear-gradient(175deg, #964696 0%, #7f00f6 50%, #964696 100%);
+  font-family: "Klee One", cursive !important;
+  letter-spacing: 1px;
+}
+
+h1 {
+  text-align: left;
+  text-transform: uppercase;
+  animation-iteration-count: infinite;
+}
+
 footer {
-  height: 190px;
+  height: 240px;
   margin-bottom: 20px;
   background-color: #3de9db;
   background: #fbd9ce;
@@ -151,28 +176,9 @@ footer {
   padding: 20px;
   margin-top: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-@media only screen and (max-width: 350px) {
-  body {
-    background-color: yellowgreen;
-    font-size: 60px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  body {
-    background-color: green !important;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  body {
-    background-color: #3cf0cf !important;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  body {
-    background-color: #964696 !important;
-  }
-}/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos.css.map */

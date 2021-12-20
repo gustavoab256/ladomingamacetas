@@ -26,43 +26,45 @@ header {
   justify-content: center;
 }
 
-#img_size:hover {
-  transform: scale(1.7, 1.7);
-  color: red;
-  transition: 0.7s;
+.div1 {
+  background-color: #FBD9CE;
+  border: #F59751 solid 3px;
+  margin: 20px;
+  padding: 2em;
+}
+
+.div2 {
+  background-color: #FBD9CE;
+  border: #F59751 solid 3px;
+  margin: 20px;
+  padding: 2em;
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
+  font-family: "Klee One", cursive !important;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
-div .div1 {
-  font-family: "Courier New", Courier, monospace;
-  background-color: #FBD9CE;
-  width: 300px;
-  height: auto;
-  align-items: center;
-  border: #F59751 solid 3px;
-  margin: 0 auto;
-  padding: 2em;
-}
-div p {
-  color: #552955;
-}
-div .colorTitulo {
+.colorUno {
   color: #F59751;
 }
-div .colorDos {
+
+.colorDos {
   color: crimson;
 }
 
+p {
+  color: #552955;
+}
+
 footer {
+  grid-area: footer;
   margin-bottom: 20px;
   background-color: #3de9db;
   background: #fbd9ce;
   background: linear-gradient(54deg, #fbd9ce 27%, #3de9db 67%, #24e1ea 86%, #00d4ff 100%);
-  border: 5px solid #552955;
+  border: 3px solid #552955;
   border-style: inset;
   padding: 20px;
   margin-top: 50px;
@@ -70,37 +72,18 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-
-li {
+footer li {
   list-style: none;
 }
-
-a {
+footer a {
   text-decoration: none;
   font-size: 20px;
   display: flex;
 }
-
-a:hover {
+footer a:hover {
   transform: translateX(0.5em);
   color: red;
   transition: 0.4s;
 }
 
-#redes {
-  margin-right: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.imagen {
-  width: 150px;
-  height: 130px;
-}
-
-.logo {
-  align-items: center;
-}
-
-/*# sourceMappingURL=modelos.css.map */
+/*# sourceMappingURL=promociones.css.map */

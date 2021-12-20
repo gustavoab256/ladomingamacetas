@@ -21,17 +21,11 @@ $xl:80px;
     box-sizing: border-box;
 }
 
-body {
-    background: rgb(150, 70, 150);
-    background: linear-gradient(175deg, rgba(150, 70, 150, 1) 0%, rgba(127, 0, 246, 1) 50%, rgba(150, 70, 150, 1) 100%);
-    font-family: 'Klee One', cursive !important;
-    letter-spacing: 1px;
-}
 
-header {
+nav {
     width: $var1;
     margin-top: ($md)-($small);
-    height: ($alto)-10;
+    height: auto;
     background: rgb(251, 217, 206);
     background: linear-gradient(54deg, rgba(251, 217, 206, 1) 27%, rgba(61, 233, 219, 1) 67%, rgba(36, 225, 234, 1) 86%, rgba(0, 212, 255, 1) 100%);
     border: 5px $color3 solid;
@@ -40,15 +34,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-nav {
-    width: ($var2)+30;
 
     a {
-        color: #F59751;
+        color: #F59751 !important;
         text-decoration: none;
-        font-size: ($small)-5px;
+        font-size: ($small);
         display: flex;
     }
 
@@ -103,7 +93,7 @@ nav {
     width: ($var1)-10%;
     height: auto;
 }
-
+@import "_h1";
 /* -- bem --*/
 .section__h3--color {
     color: $color4;
@@ -148,12 +138,6 @@ nav {
 }
 
 
-h1 {
-    text-align: left;
-    text-transform: uppercase;
-    animation-iteration-count: infinite;
-}
-
 #caja1 {
     color: #F59751
 }
@@ -166,45 +150,34 @@ h1 {
     text-transform: capitalize;
 }
 
-footer {
-    height: ($alto)-10px;
-    margin-bottom: $small;
-    background-color: #3de9db;
-    background: rgb(251, 217, 206);
-    background: linear-gradient(54deg, rgba(251, 217, 206, 1) 27%, rgba(61, 233, 219, 1) 67%, rgba(36, 225, 234, 1) 86%, rgba(0, 212, 255, 1) 100%);
-    border: 5px solid $color3;
-    border-style: inset;
-    padding: $small;
-    margin-top: ($md)+10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@media only screen and (max-width: 350px){
+    .logo{
+        width: 70%;
+        height: auto;
+    }
 }
-
-
-
-
-@media only screen and (max-width: 350px) {
-    body {
-        background-color: yellowgreen;
-        font-size: 60px;
+@media only screen and (max-width: 768px) {
+    .logo{
+        width: 50%;
+        height: auto;
     }
 }
 
-@media only screen and (min-width: 768px) {
-    body {
-        background-color: green !important;
+@media only screen and (max-width: 1024px) {
+    .logo{
+        width: 40%;
+        height: auto;
     }
 }
 
-@media only screen and (min-width: 1024px) {
-    body {
-        background-color: #3cf0cf !important;
+@media only screen and (max-width: 1200px) {
+    .logo{
+        width: 30%;
+        height: auto;
     }
 }
+@import "_body";
 
-@media only screen and (min-width: 1200px) {
-    body {
-        background-color: #964696 !important;
-    }
-}
+@import "_h1" ;
+
+@import "_footer"
